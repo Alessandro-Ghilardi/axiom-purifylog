@@ -24,5 +24,10 @@
     "license": "MIT",
     "engines": {
         "node": ">=14"
-    }
+    },
+    "files": [
+        "index.js",
+        "README.md",
+        "LICENSE"
+    ]
 }
