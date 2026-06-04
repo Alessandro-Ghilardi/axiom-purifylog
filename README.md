@@ -94,7 +94,6 @@ const logger = require('redactify');
 
 const app = express();
 
-// Register the request logging middleware
 app.use(logger.getRequestMiddleware());
 
 app.get('/users', (req, res) => {
