@@ -42,6 +42,7 @@ logger.info({
         sessionToken: "a-very-long-token-identifier-that-should-not-leak", // Will be redacted
         nested: {
             password: "super-secret-password-123", // Will be redacted
+            address: "123 Main St, Anytown, USA", // Will be redacted
             active: true // Kept intact
         }
     }
