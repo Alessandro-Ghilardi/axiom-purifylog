@@ -1,4 +1,4 @@
-# redactify
+# purifylog
 
 A privacy-first Node.js logger with automatic sensitive data redaction, file rotation, and a built-in HTTP log viewer.
 
@@ -13,13 +13,13 @@ A privacy-first Node.js logger with automatic sensitive data redaction, file rot
 ## Installation
 
 ```bash
-npm install redactify
+npm install purifylog
 ```
 
 ## Quick Start
 
 ```javascript
-const logger = require('redactify');
+const logger = require('purifylog');
 
 // Simple logs
 logger.info('Application started successfully');
@@ -31,7 +31,7 @@ logger.error('Failed to load resource');
 
 ### 1. Automatic Sensitive Data Masking (Redaction)
 
-redactify automatically intercepts strings and objects to sanitize sensitive information before printing to stdout or writing to disk.
+purifylog automatically intercepts strings and objects to sanitize sensitive information before printing to stdout or writing to disk.
 
 ```javascript
 logger.info({
@@ -90,7 +90,7 @@ Easily log incoming HTTP requests. The middleware automatically measures respons
 
 ```javascript
 const express = require('express');
-const logger = require('redactify');
+const logger = require('purifylog');
 
 const app = express();
 
@@ -107,7 +107,7 @@ Expose an administrative endpoint to browse directories and read log files direc
 
 ```javascript
 const http = require('http');
-const logger = require('redactify');
+const logger = require('purifylog');
 
 http.createServer((req, res) => {
     // Route logs requests to the logger handler
