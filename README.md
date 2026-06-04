@@ -1,4 +1,4 @@
-# purifylog
+# axiom-purifylog
 
 A privacy-first Node.js logger with automatic sensitive data redaction, file rotation, and a built-in HTTP log viewer.
 
@@ -13,13 +13,13 @@ A privacy-first Node.js logger with automatic sensitive data redaction, file rot
 ## Installation
 
 ```bash
-npm install purifylog
+npm install axiom-purifylog
 ```
 
 ## Quick Start
 
 ```javascript
-const logger = require('purifylog');
+const logger = require('axiom-purifylog');
 
 // Simple logs
 logger.info('Application started successfully');
@@ -31,7 +31,7 @@ logger.error('Failed to load resource');
 
 ### 1. Automatic Sensitive Data Masking (Redaction)
 
-purifylog automatically intercepts strings and objects to sanitize sensitive information before printing to stdout or writing to disk.
+axiom-purifylog automatically intercepts strings and objects to sanitize sensitive information before printing to stdout or writing to disk.
 
 ```javascript
 logger.info({
@@ -91,7 +91,7 @@ Easily log incoming HTTP requests. The middleware automatically measures respons
 
 ```javascript
 const express = require('express');
-const logger = require('purifylog');
+const logger = require('axiom-purifylog');
 
 const app = express();
 
@@ -108,7 +108,7 @@ Expose an administrative endpoint to browse directories and read log files direc
 
 ```javascript
 const http = require('http');
-const logger = require('purifylog');
+const logger = require('axiom-purifylog');
 
 http.createServer((req, res) => {
     // Route logs requests to the logger handler

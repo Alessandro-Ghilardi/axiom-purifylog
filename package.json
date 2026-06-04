@@ -1,8 +1,25 @@
 {
-    "name": "purifylog",
-    "version": "1.0.1",
-    "main": "index.js",
+    "name": "axiom-purifylog",
+    "version": "1.0.0",
     "description": "A privacy-first Node.js logger with automatic sensitive data redaction, file rotation, and a built-in HTTP log viewer.",
+    "main": "index.js",
+    "keywords": [
+        "logger",
+        "logging",
+        "privacy",
+        "security",
+        "redaction",
+        "sensitive-data",
+        "file-rotation",
+        "log-viewer",
+        "http",
+        "nodejs",
+        "privacy-first",
+        "data-protection",
+        "gdpr",
+        "pii",
+        "personal-data"
+    ],
     "author": "Alessandro Ghilardi",
     "license": "MIT",
     "engines": {
