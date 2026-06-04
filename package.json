@@ -1,6 +1,6 @@
 {
     "name": "purifylog",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "main": "index.js",
     "description": "A privacy-first Node.js logger with automatic sensitive data redaction, file rotation, and a built-in HTTP log viewer.",
     "author": "Alessandro Ghilardi",
